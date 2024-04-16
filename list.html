@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documento</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script> 
+  <script src="js/library/list.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/custom.css"/>
+</head>
+
+<body>
+
+<div id="test-list">
+  <div id="users">
+    <input class="search" placeholder="Search" />
+    <button class="sort" data-sort="name">Ordenar por nombre</button>
+    <button class='sort' data-sort='born' data-default-order='desc'>Ordenar por número</button>  
+    <button class='sort' data-sort='city'>Ordenar por ciudad</button>
+      <ul class="list">
+        <!-- el primer elemento de la lista, se utilizará como plantilla para nuevos elementos. -->
+        <li data-id="1">
+          <a href="https://twitter.com/javve" class="link name">Jonny Stromberg</a>
+          <p class="city">Stockholm</p>
+          <p class="born timestamp" data-timestamp="12345">1986</p>
+          <img class="image" src="img/luke.jpeg">
+        </li>
+      </ul>
+  </div>
+</div>
+  <script src="js/custom.js"></script> 
+
+</body>
+</html>
